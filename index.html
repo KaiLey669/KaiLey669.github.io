@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        .header{
+            width: 100%;
+            max-width: 300px;
+            padding: 0 15px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 30px;
+            background-color: whitesmoke;
+            border: 2px solid lightslategray;
+            border-radius: 10px;
+        }
+
+        .main{
+            position: relative;
+            width: 500px;
+            height: 775px;
+            left: 50%;
+            top: 30px; 
+            margin-left: -250px;
+            background: whitesmoke;
+            border: 2px solid lightslategray;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .input_message{
+            position: absolute;
+            left: 50%;
+            bottom: 30px; 
+            width: 400px;
+            height: 30px;
+            margin-left: -200px;
+            box-sizing: border-box;
+
+            background: whitesmoke;
+            border: 2px solid lightslategray;
+            border-radius: 10px;
+
+            font-size: 16px;
+            text-indent: 10px;
+        }
+
+        .message_out{
+            position: absolute;
+            left: 50%;
+            top: 30px;
+            width: 400px;
+            height: 655px;
+            margin-left: -200px;
+
+            background: whitesmoke;
+            border: 2px solid lightslategray;
+            border-radius: 10px;
+            box-sizing: border-box;
+
+            overflow-y: auto;
+        }
+
+        .message_text{
+            background: lightslategray;
+            font-size: 20px;
+            width: fit-content;
+            border-radius: 10px;
+            margin: 1.5%;
+        } 
+
+    </style>
+    <title>Некий мессенджер</title>
+    
+</head>
+
+<body>
+    <header>
+        <div class = "header">Некий мессенджер</div>
+    </header>
+
+    <div class = "main">
+        <div class = "message_out">
+        </div>   
+        <div class = "internal">
+            <input type = "text" class = "input_message" placeholder="Введите сообщение" >
+        </div> 
+    </div>
+
+</body>
+<script src = "Messanger/script.js"></script>
+</html>
